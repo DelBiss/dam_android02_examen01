@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Examen01</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="list_produit_header_produit">Produit - Catégorie</string>
+    <string name="list_produit_header_qte">Quantité</string>
+    <string name="list_produit_header_prix">Prix</string>
+    <string name="mainactivity_fab">Ajouter un produit</string>
+    <string name="produit_new_field_nom">Nom du produit*</string>
+    <string name="produit_new_field_categ">Catégorie*</string>
+    <string name="produit_new_field_qte">Unité en stock*</string>
+    <string name="produit_new_field_prix">Prix Unitaire*</string>
+    <string name="error_field_required_empty">Ce champs est requis et ne peut être vide</string>
+    <string name="helper_field_required">*Requis</string>
+    <string name="action_save">Enregistrer</string>
+    <string name="prompt_inv_total">Le montant total de l’inventaire est :</string>
+    <string name="prompt_categ">Le montant total pour la catégorie est :</string>
+    <string name="spinner_all">Tous les produits</string>
+    <string name="toas_new_product">Produit # %1$d a été bien enregistré</string>
+    <string name="lbl_lastName">Nom</string>
+    <string name="lbl_firstName">Prénom</string>
+    <string name="lbl_sexe">Sexe</string>
+    <string name="lbl_titre">Titre</string>
+    <string name="lbl_salaire">Salaire</string>
+    <string name="produit_new_field_prenom">Prénom*</string>
+    <string name="employee_new_field_prenom">Prénom*</string>
+    <string name="employee_new_field_nom">Nom*</string>
+    <string name="employee_new_field_title">Titre*</string>
+    <string name="employee_new_field_salaire">Salaire</string>
+    <string name="employee_new_field_sexe_masculin">Masculin</string>
+    <string name="employee_new_field_sexe_feminin">Feminin</string>
+    <string name="action_filter">Filtrer</string>
+    <string name="lbl_id">#</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/employee_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginVertical="@dimen/default_margin"
+        android:hint="@string/employee_new_field_nom"
+        app:boxBackgroundMode="filled"
+        app:errorEnabled="true"
+        app:helperText="@string/helper_field_required"
+        app:hintAnimationEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:text="Lalonde" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/employee_prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginVertical="@dimen/default_margin"
+        android:hint="@string/employee_new_field_prenom"
+        app:boxBackgroundMode="filled"
+        app:errorEnabled="true"
+        app:helperText="@string/helper_field_required"
+        app:hintAnimationEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:ignore="TextContrastCheck"
+            tools:text="Karl" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/employee_titre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginVertical="@dimen/default_margin"
+            android:hint="@string/employee_new_field_title"
+            app:boxBackgroundMode="filled"
+            app:errorEnabled="true"
+            app:helperText="@string/helper_field_required"
+            app:hintAnimationEnabled="true"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                tools:ignore="TextContrastCheck"
+                tools:text="Ouvrier" />
+        </com.google.android.material.textfield.TextInputLayout>
+    <RadioGroup
+        android:id="@+id/employee_sexe"
+        android:checkedButton="@+id/employee_sexe_masculin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/employee_sexe_masculin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:text="@string/employee_new_field_sexe_masculin"/>
+        <RadioButton
+            android:id="@+id/employee_sexe_feminin"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_height="wrap_content"
+            android:text="@string/employee_new_field_sexe_feminin"/>
+
+    </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/employee_salaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginVertical="@dimen/default_margin"
+            android:hint="@string/employee_new_field_salaire"
+            app:boxBackgroundMode="filled"
+            app:endIconMode="none"
+            app:errorEnabled="true"
+
+            app:helperText="@string/helper_field_required"
+            app:hintAnimationEnabled="true"
+
+            app:suffixText="$">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd"
+                tools:text="371000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

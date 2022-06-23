@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="employee" type="ca.philrousse.android02.examen01.data.Employes"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            android:id="@+id/employee_id"
+            android:layout_width="@dimen/field_id"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginVertical="@dimen/default_margin"
+            android:layout_marginTop="16dp"
+
+            android:text="@{Integer.toString(employee._id)}"
+
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="9" />
+
+        <TextView
+            android:id="@+id/employee_nom"
+
+            android:layout_width="@dimen/field_lastname"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginVertical="@dimen/default_margin"
+
+
+            android:text="@{employee.nom, default=@string/lbl_lastName}"
+            app:layout_constraintStart_toEndOf="@+id/employee_id"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Lalonde" />
+
+        <TextView
+            android:id="@+id/employee_prenom"
+            android:layout_width="@dimen/field_name"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginVertical="@dimen/default_margin"
+
+
+            android:text="@{employee.prenom, default=@string/lbl_firstName}"
+
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintStart_toEndOf="@+id/employee_nom"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Karl" />
+
+        <TextView
+            android:id="@+id/employee_sexe"
+            android:layout_width="@dimen/field_sexe"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginVertical="@dimen/default_margin"
+            android:layout_marginTop="16dp"
+
+            android:text="@{employee.sexe, default=@string/lbl_sexe}"
+
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintStart_toEndOf="@+id/employee_prenom"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="M" />
+
+        <TextView
+            android:id="@+id/employee_titre"
+            android:layout_width="@dimen/field_title"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginVertical="@dimen/default_margin"
+
+
+            android:text="@{employee.titre, default=@string/lbl_titre}"
+
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintEnd_toStartOf="@+id/employee_salaire"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Ouvrier" />
+
+        <TextView
+            android:id="@+id/employee_salaire"
+            currencyAmount="@{employee.salaire}"
+            android:layout_width="@dimen/field_salary"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+
+            android:layout_marginVertical="@dimen/default_margin"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="37 000,00$" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
